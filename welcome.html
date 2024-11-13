@@ -46,7 +46,6 @@
         <h2>歡迎！請輸入您的暱稱：</h2>
         <input type="text" id="nickname" placeholder="您的暱稱">
         <button onclick="greet()">打招呼</button>
-        <p id="greeting"></p>
     </header>
 
     <section>
@@ -77,11 +76,10 @@
     <script>
         function greet() {
             const nickname = document.getElementById('nickname').value;
-            const greeting = document.getElementById('greeting');
             if (nickname) {
-                greeting.innerText = `您好，${nickname}！歡迎參觀我的作品！`;
+                alert(`您好，${nickname}！歡迎參觀我的作品！`);
             } else {
-                greeting.innerText = '請輸入您的暱稱。';
+                alert('請輸入您的暱稱。');
             }
         }
     </script>
